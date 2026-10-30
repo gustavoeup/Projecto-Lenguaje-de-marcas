@@ -1,3 +1,15 @@
+
+/* ESTILOS GENERALES */
+
+body {
+    margin: 0;
+    background-color: #1e3a5fd0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CABECERA Y NAVEGACIÓN */
+
 header {
     background-color: #1e3a5f;
     padding: 20px;
@@ -5,26 +17,125 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     display: flex;
     gap: 25px;
     list-style: none;
-    color: white;
     margin: 0;
     padding: 0;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #000;
+    color: #ffd166;
 }
 
-body {
-    background-color: #1e3a5fd0;
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main section {
+    background-color: white;
+    color: #1e3a5f;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+main h2 {
+    color: #1e3a5f;
+    margin-top: 0;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+
+/* BOTONES Y ENLACES */
+
+main a {
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+main a:hover {
+    background-color: #32638e;
+}
+
+
+/* DESTINOS DESTACADOS */
+
+.destinos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destinos-destacados > h2,
+.destinos-destacados > p {
+    width: 100%;
+}
+
+.destinos-destacados article {
+    flex: 1 1 220px;
+    background-color: #eef4f8;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d5e2ec;
+}
+
+.destinos-destacados img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* PANTALLAS PEQUEÑAS */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
