@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ExploraEuropa</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>ExploraEuropa</h1>
+        <h1><a href="index.html">ExploraEuropa</a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -18,22 +19,22 @@
     </header>
     
 <main>
-    <section>
-        <h2>Descubre Europa con nosotros</h2>
+
+    <section class="hero">
+        <h2>Descubre Europa</h2>
 
         <p>
-            Bienvenido a ExploraEuropa, tu guía para descubrir
-            algunas de las ciudades más interesantes de Europa.
-            Conoce nuevos lugares, culturas y experiencias
-            para tu próximo viaje.
+            Explora ciudades increíbles, descubre nuevas
+            culturas y encuentra tu próximo destino en Europa.
         </p>
 
-        <a href="destinos.html">Explorar destinos</a>
+        <a href="#destinos">Descubrir destinos</a>
     </section>
 
+    <div class="contenido">
 
     <!-- Destinos destacados -->
-    <section class="destinos-destacados">
+    <section class="destinos-destacados" id="destinos">
         <h2>Destinos destacados</h2>
 
         <p>
@@ -86,7 +87,7 @@
 
 
     <!-- Información sobre los viajes -->
-    <section>
+    <section class="beneficios">
         <h2>¿Por qué viajar por Europa?</h2>
 
         <p>
@@ -104,7 +105,7 @@
 
 
     <!-- Planificación del viaje -->
-    <section>
+    <section class="planificacion">
         <h2>Planifica tu próxima aventura</h2>
 
         <p>
@@ -115,11 +116,39 @@
 
         <a href="planifica.html">Planificar mi viaje</a>
     </section>
+
+    </div>
+
 </main>
 
+    
     <footer>
+        <div class="footer-contenido">
 
+            <section>
+                <h3>ExploraEuropa</h3>
+                <p>Descubre Europa, sus ciudades y sus culturas.</p>
+            </section>
+
+            <section>
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="planifica.html">Planifica tu viaje</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Sobre este sitio</h3>
+                <p>Proyecto educativo de Lenguajes de Marcas.</p>
+        </section>
+
+        </div>
+
+    <p class="footer-final">ExploraEuropa - 2026</p>
     </footer>
+
 
 </body>
 </html>

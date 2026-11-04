@@ -12,19 +12,25 @@ body {
 
 header {
     background-color: #1e3a5f;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
+    
 
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header h1 {
-    margin: 0;
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: #ffd166;
 }
 
 nav ul {
@@ -48,9 +54,68 @@ nav a:hover {
 /* CONTENIDO PRINCIPAL */
 
 main {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
     max-width: 1100px;
     margin: 30px auto;
     padding: 0 20px;
+}
+
+main .hero {
+    min-height: calc(100vh - 72px);
+    background: linear-gradient(135deg, #17324f, #376a91);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    margin: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../img/imagen-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+main .hero h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    color: white;
+    margin-bottom: 20px;
+}
+
+main .hero p {
+    font-size: 20px;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+main .hero a {
+    background-color: white;
+    color: #1e3a5f;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main .hero a:hover {
+    background-color: #dce8f2;
+    color: #1e3a5f;
 }
 
 main section {
@@ -137,5 +202,150 @@ footer {
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-contenido section {
+    flex: 1 1 200px;
+}
+
+.footer-contenido h3 {
+    margin-top: 0;
+}
+
+.footer-contenido ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contenido li {
+    margin-bottom: 10px;
+}
+
+.footer-contenido a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contenido a:hover {
+    color: #ffd166;
+}
+
+.footer-final {
+    text-align: center;
+    border-top: 1px solid #60758e;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+body {
+    background-color: #f5f7fa;
+}
+
+/* Contenedor principal */
+
+.contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 25px;
+}
+
+/* Destinos sin caja exterior */
+
+main .contenido > .destinos-destacados {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Título y descripción centrados */
+
+.destinos-destacados > h2,
+.destinos-destacados > p {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.destinos-destacados > h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.destinos-destacados > p {
+    color: #66778a;
+    margin: 0 0 20px;
+}
+
+/* Tarjetas individuales */
+
+main .contenido .destinos-destacados article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e9ee;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el ratón */
+
+.destinos-destacados article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* Imágenes */
+
+.destinos-destacados img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Descripciones */
+
+.destinos-destacados article p {
+    color: #53677d;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* Botones */
+
+.destinos-destacados article a {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/* Adaptación para móviles */
+
+@media (max-width: 800px) {
+    main .contenido > .destinos-destacados {
+        grid-template-columns: 1fr;
     }
 }
