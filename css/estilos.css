@@ -349,3 +349,176 @@ main .contenido .destinos-destacados article {
         grid-template-columns: 1fr;
     }
 }
+
+/* PAGINA DE DESTINOS */
+
+.introduccion-destinos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pagina-destinos .contenido section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pagina-destinos .contenido img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pagina-destinos .contenido p {
+    line-height: 1.6;
+}
+
+.pagina-destinos .contenido section {
+    scroll-margin-top: 90px;
+}
+
+/* PAGINA PLANIFICA */
+
+.pagina-planifica {
+    background-color: #f5f7fa;
+    padding: 60px 20px;
+}
+
+/* Presentacion */
+
+.introduccion-planifica {
+    text-align: center;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.introduccion-planifica h2 {
+    font-size: 34px;
+    color: #1e3a5f;
+}
+
+.introduccion-planifica p {
+    color: #66778a;
+}
+
+/* Contenedor del formulario */
+
+.formulario-viaje {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.formulario-viaje h3 {
+    color: #1e3a5f;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Campos del formulario */
+
+.formulario-viaje form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-viaje label {
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+.formulario-viaje input,
+.formulario-viaje select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    color: #334155;
+}
+
+/* Campo seleccionado */
+
+.formulario-viaje input:focus,
+.formulario-viaje select:focus {
+    outline: 2px solid #32638e;
+    outline-offset: 1px;
+}
+
+/* Boton */
+
+.formulario-viaje button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.formulario-viaje button:hover {
+    background-color: #32638e;
+}
+
+/* Adaptacion a pantallas pequeñas */
+
+@media (max-width: 600px) {
+    .formulario-viaje {
+        padding: 20px;
+    }
+}
+
+
+/* PAGINA DE GRACIAS */
+
+.pagina-gracias {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f5f7fa;
+}
+
+.pagina-gracias .mensaje-gracias {
+    background-color: white;
+    text-align: center;
+    max-width: 600px;
+    padding: 50px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.mensaje-gracias h2 {
+    color: #1e3a5f;
+    font-size: 28px;
+}
+
+.mensaje-gracias p {
+    color: #66778a;
+    line-height: 1.6;
+}
+
+.mensaje-gracias a {
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.mensaje-gracias a:hover {
+    background-color: #32638e;
+}

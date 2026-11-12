@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>ExploraEuropa</h1>
+        <h1><a href="index.html">ExploraEuropa</a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -16,11 +16,77 @@
             </ul>
         </nav>
     </header>
-    <main>
+    
+<main class="pagina-planifica">
 
-    </main>
+    <section class="introduccion-planifica">
+        <h2>Planifica tu viaje</h2>
+        <p>
+            Elige tu destino y organiza tu próxima
+            aventura por Europa.
+        </p>
+    </section>
+
+    <section class="formulario-viaje">
+
+        <h3>Datos del viaje</h3>
+
+        <form action="gracias.html" method="get">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino" required>
+                <option value="">Selecciona una ciudad</option>
+                <option value="paris">París</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="roma">Roma</option>
+            </select>
+            <label for="fecha">Fecha del viaje:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="viajeros">Número de viajeros:</label>
+            <input type="number" id="viajeros" name="viajeros" min="1" max="20" required>
+
+            <label for="presupuesto">Presupuesto aproximado (€):</label>
+            <input type="number" id="presupuesto" name="presupuesto" min="0" step="0.01" required>
+
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus preferencias..."></textarea>
+
+            <button type="submit">Planificar mi viaje</button>
+
+        </form>
+
+    </section>
+
+</main>
     <footer>
+        <div class="footer-contenido">
 
+            <section>
+                <h3>ExploraEuropa</h3>
+                <p>Descubre Europa, sus ciudades y sus culturas.</p>
+            </section>
+
+            <section>
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="planifica.html">Planifica tu viaje</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Sobre este sitio</h3>
+                <p>Proyecto educativo de Lenguajes de Marcas.</p>
+        </section>
+
+        </div>
+
+    <p class="footer-final">ExploraEuropa - 2026</p>
     </footer>
 </body>
 </html>
